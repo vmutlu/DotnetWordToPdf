@@ -1,0 +1,21 @@
+﻿@model FileTypeConversion
+
+<div class="container">
+    <div class="col-md-12">
+        <form asp-action="WordToPdf" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="File" class="control-label"></label>
+                <input type="File" name="File" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input type="email" name="Email" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Conversion" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
